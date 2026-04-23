@@ -23,6 +23,7 @@ body {
 
 .header {
   position: relative;
+  display: flex;
   width: 90rem;
   margin: 3.2rem auto 4.4rem;
 }
@@ -70,6 +71,7 @@ body {
   max-width: 90rem;
   margin: 0 auto;
   display: flex;
+  justify-content: center;
   flex-wrap: wrap;
   gap: 1.5rem;
 }
@@ -97,7 +99,7 @@ body {
   margin-bottom: 1.6rem;
 }
 
-.card__subtitle:nth-child(2) {
+.card:nth-child(2) .card__subtitle {
   color: #fff;
 }
 
@@ -112,14 +114,12 @@ body {
   font-size: 1.6rem;
 }
 
-.card__price::after {
-  display: block;
-  content: "/mo";
-  position: absolute;
-  bottom: 3px;
-  right: 0px;
-  font-size: 1.6rem;
-  transform: translateX(100%);
+.card__price > span:last-child {
+  color: #777;
+}
+
+.card:nth-child(2) .card__price > span:last-child {
+  color: #fff;
 }
 
 .card__discount {
