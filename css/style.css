@@ -22,47 +22,35 @@ body {
 /* HEADER */
 
 .header {
-  position: relative;
   display: flex;
-  width: 90rem;
-  margin: 3.2rem auto 4.4rem;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  max-width: 90rem;
+  margin: 3.2rem auto;
 }
 
-.header h2 {
-  font-size: 3.6rem;
-  font-weight: 700;
+.header div:first-child h2 {
+  font-size: 3.2rem;
   line-height: 1.2;
 }
 
-.header p {
+.header div:first-child span {
   font-size: 1.2rem;
   color: #777;
 }
 
-.header__btn-box {
-  position: absolute;
-  top: 0;
-  right: 0;
-  display: flex;
-  gap: 1.6rem;
-}
-
-.header__btn-box div {
-  display: flex;
-  align-items: center;
-}
-
-.header__btn-box div span {
+.header div:last-child span {
   font-size: 1.2rem;
+}
+
+.header div:last-child i {
+  font-size: 2.8rem;
+  vertical-align: middle;
   margin-right: 0.8rem;
 }
 
-.header__btn-box div i {
-  font-size: 2.8rem;
-}
-
-.header__btn-box div:last-child i {
-  color: #777;
+.header div:last-child i:last-child {
+  margin: 0;
 }
 
 /* CARD SECTION */
@@ -137,6 +125,7 @@ body {
   border-radius: 9px;
   padding: 1.6rem 0;
   margin-bottom: 1.6rem;
+  cursor: pointer;
 }
 
 .card:nth-child(2) .card__btn {
