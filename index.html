@@ -8,6 +8,7 @@
       href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css"
     />
     <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="css/mq.css" />
     <title>Pricing Plan</title>
   </head>
   <body>
@@ -37,7 +38,7 @@
           <div class="card__subtitle">Most Popular</div>
           <div class="center">
             <p class="card__price"><span>$ </span>2.45<span> /mo</span></p>
-            <p class="card__discount">Yearly 15% Off</p>
+            <p class="card__discount">Yearly <span>15% Off</span></p>
           </div>
           <button class="card__btn">Choose plan</button>
           <i class="bi bi-check card__icon">
@@ -62,10 +63,10 @@
 
         <div class="card">
           <h2 class="card__title">Professional</h2>
-          <div class="card__subtitle">Most Popular</div>
+          <div class="card__subtitle">Reccomended</div>
           <div class="center">
             <p class="card__price"><span>$ </span>4.45<span> /mo</span></p>
-            <p class="card__discount">Yearly 15% Off</p>
+            <p class="card__discount">Yearly <span>15% Off</span></p>
           </div>
           <button class="card__btn">Choose plan</button>
           <i class="bi bi-check card__icon">
@@ -90,30 +91,36 @@
 
         <div class="card">
           <h2 class="card__title">Ultimate</h2>
-          <div class="card__subtitle">Most Popular</div>
+          <div class="card__subtitle">Best Value</div>
           <div class="center">
             <p class="card__price"><span>$ </span>12.45<span> /mo</span></p>
-            <p class="card__discount">Yearly 15% Off</p>
+            <p class="card__discount">Yearly <span>15% Off</span></p>
           </div>
           <button class="card__btn">Choose plan</button>
-          <i class="bi bi-check card__icon">
-            <span class="card__info">Unlimited Products</span>
-          </i>
-          <i class="bi bi-check card__icon">
-            <span class="card__info">Custom Permissions</span>
-          </i>
-          <i class="bi bi-check card__icon">
-            <span class="card__info">Custom Infrastructure</span>
-          </i>
-          <i class="bi bi-check card__icon">
-            <span class="card__info">Custom Design &amp; futures</span>
-          </i>
-          <i class="bi bi-check card__icon">
-            <span class="card__info">Unlimited updates</span>
-          </i>
-          <i class="bi bi-check card__icon">
-            <span class="card__info">Unlimited Infrastructure</span>
-          </i>
+          <div class="flex">
+            <div>
+              <i class="bi bi-check card__icon">
+                <span class="card__info">Unlimited Products</span>
+              </i>
+              <i class="bi bi-check card__icon">
+                <span class="card__info">Custom Permissions</span>
+              </i>
+              <i class="bi bi-check card__icon">
+                <span class="card__info">Custom Infrastructure</span>
+              </i>
+            </div>
+            <div>
+              <i class="bi bi-check card__icon">
+                <span class="card__info">Custom Design &amp; futures</span>
+              </i>
+              <i class="bi bi-check card__icon">
+                <span class="card__info">Unlimited updates</span>
+              </i>
+              <i class="bi bi-check card__icon">
+                <span class="card__info">Unlimited Infrastructure</span>
+              </i>
+            </div>
+          </div>
         </div>
       </section>
     </main>

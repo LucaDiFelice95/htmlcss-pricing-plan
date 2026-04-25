@@ -1,0 +1,58 @@
+/* HEADER MQ */
+
+@media screen and (min-width: 425px) {
+  .header {
+    padding: 0 1.6rem;
+  }
+
+  .header div:nth-child(1) {
+    text-align: center;
+  }
+
+  .header div:nth-child(2) {
+    display: flex;
+    flex-grow: 1;
+    justify-content: center;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .header div:nth-child(1) {
+    text-align: unset;
+  }
+
+  .header div:nth-child(2) {
+    justify-content: flex-end;
+  }
+}
+
+/* CARD MQ */
+
+@media screen and (min-width: 425px) {
+  .card:nth-child(2) {
+    order: -1;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .card:nth-child(2) {
+    order: unset;
+  }
+
+  .card__section {
+    padding: 0 1.6rem;
+  }
+
+  .card {
+    flex-grow: 1;
+  }
+
+  .card:last-child {
+    flex-grow: 2;
+  }
+
+  .card .flex {
+    display: flex;
+    justify-content: space-around;
+  }
+}
