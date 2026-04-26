@@ -23,6 +23,7 @@ body {
 
 .header {
   display: flex;
+  justify-content: space-between;
   flex-wrap: wrap;
   max-width: 90rem;
   margin: 3.2rem auto;
@@ -39,8 +40,6 @@ body {
 }
 
 .header div:nth-child(2) {
-  display: flex;
-  align-items: center;
 }
 
 .header div:last-child span {
@@ -50,6 +49,7 @@ body {
 
 .header div:last-child i {
   font-size: 2.8rem;
+  vertical-align: middle;
   margin-right: 10px;
 }
 
@@ -70,6 +70,7 @@ body {
 
 .card {
   flex: 0 0 calc(100% / 3 - (1.5rem * 2) / 3);
+  flex-grow: 1;
   padding: 1.6rem;
   min-width: 25rem;
   border-radius: 9px;
