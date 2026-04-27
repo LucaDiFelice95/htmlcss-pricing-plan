@@ -80,6 +80,7 @@ body {
 .card:nth-child(2) {
   background-color: #6500ff;
   color: #fff;
+  order: -1;
 }
 
 .card__title {
